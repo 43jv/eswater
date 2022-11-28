@@ -1,0 +1,8 @@
+.swal-modal {
+	background-color: rgb(255, 255, 255);
+	border: 3px solid rgb(26, 13, 13);
+}
+
+.swal-overlay {
+	background-color: rgba(40, 235, 242, 0.45);
+}
