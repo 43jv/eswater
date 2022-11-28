@@ -23,7 +23,24 @@ function Repeat() { // Repeat is called from body onload
 	setTimeout(update_data, 4750);
 	setInterval(update_data, 5000);
 }
+$(document).ready(function () {
+	getdata = function () {
 
+		const params = {
+			headers: {
+				"X-M2M-Origin": "admin:admin", "Content-Type": "application/json"
+			},
+			method: "GET",
+		}
+
+		fetch("http://192.168.43.9:8080/~/in-cse/in-name/node1_novapm/DATA/la", params).then(data => { return data.json() })
+			.then(res => {
+				console.log(res);
+			}
+			)
+		}
+	}
+)
 function threshold_cross() { // Checks if thresholds have been exceeded
 	// $ uses ajax get to get data from url
 	$.get(url_tds, function (data) {tds = data;});
