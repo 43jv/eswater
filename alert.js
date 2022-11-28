@@ -19,7 +19,8 @@ var turb = 0;
 function Repeat() { // Repeat is called from body onload
 	setTimeout(send_alert, 59500); // Runs function after 59.5 seconds
 	setInterval(send_alert, 60000); // Runs function every 60 seconds
-	setInterval(color_change, 5000); // Runs function every 5 seconds
+	setTimeout(color_change, 6500);
+	setInterval(color_change, 7000); // Runs function every 5 seconds
 	setTimeout(update_data, 4750);
 	setInterval(update_data, 5000);
 }
