@@ -33,7 +33,7 @@ $(document).ready(function () {
 			method: "GET",
 		}
 
-		fetch("http://192.168.43.9:8080/~/in-cse/in-name/node1_novapm/DATA/la", params).then(data => { return data.json() })
+		fetch("http://192.168.43.9:8080/~/in-cse/in-name/Team-25/Node-1/Data/la", params).then(data => { return data.json() })
 			.then(res => {
 				console.log(res);
 			}
